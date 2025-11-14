@@ -2,7 +2,7 @@
 
 A simple, lightweight, and customizable SMB (Server Message Block) server implementation in Python. Perfect for sharing files across networks, testing SMB client applications, or building custom file-sharing solutions.
 
-This implementation is based on Impacket 0.13.0, but has been refactored to remove all offensive or attack-oriented capabilities originally provided by the library. The goal is to provide a clean SMB server suitable for legitimate development and testing purposes.
+This implementation is based on [Impacket](https://github.com/fortra/impacket) 0.13.0, but has been refactored to remove all offensive or attack-oriented capabilities originally provided by the library. The goal is to provide a clean SMB server suitable for legitimate development and testing purposes.
 
 All file headers have been removed, and several minor adjustments were made in smbserver.py, including improvements to logging information and updates to the addCredential method to simplify password handling.
 
@@ -238,4 +238,5 @@ pysmbserver -smb2support -debug -port 1445 -u user -password secret TMP /tmp
 Then connect from another machine:
 ```bash
 smbclient \\\\server_ip\\TMP -U user secret -p 1445 
+
 ```
