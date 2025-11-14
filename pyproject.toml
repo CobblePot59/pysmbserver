@@ -1,7 +1,7 @@
 [project]
 name = "pysmbserver"
 version = "0.1.0"
-description = ""
+description = "A simple, lightweight, and customizable SMB (Server Message Block) server implementation in Python. "
 authors = [
     {name = "CobblePot59",email = "38343920+CobblePot59@users.noreply.github.com"}
 ]
@@ -22,3 +22,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 pysmbserver = "pysmbserver.cli:main"
+
