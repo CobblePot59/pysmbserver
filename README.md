@@ -32,7 +32,7 @@ pip install pysmbserver
 Or install from source:
 
 ```bash
-pipx install git+https://github.com/yourusername/pysmbserver.git
+pipx install git+https://github.com/CobblePot59/pysmbserver.git
 ```
 
 ## Quick Start
@@ -240,3 +240,4 @@ Then connect from another machine:
 smbclient \\\\server_ip\\TMP -U user secret -p 1445 
 
 ```
+
